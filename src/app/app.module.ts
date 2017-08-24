@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import * as Raven from 'raven-js';
+Raven.config('').install();
+
 @NgModule({
   declarations: [
     AppComponent
